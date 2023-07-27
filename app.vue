@@ -2,8 +2,8 @@
 
 <script setup lang="ts">
 
-import { apiRequest } from "~/api/client";
 import { components } from "~/api/endpoints";
+import { apiRequest } from "~/composables/useFetch";
 
 const pet = await apiRequest(
     "/pet/{petId}",
